@@ -52,10 +52,19 @@
     <Compile Include="frmPlayer.Designer.cs">
       <DependentUpon>frmPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlaylistSelectionButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlaylistSelectionButton.Designer.cs">
+      <DependentUpon>PlaylistSelectionButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPlayer.resx">
       <DependentUpon>frmPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaylistSelectionButton.resx">
+      <DependentUpon>PlaylistSelectionButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

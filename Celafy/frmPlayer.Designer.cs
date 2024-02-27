@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlSelector = new System.Windows.Forms.Panel();
+            this.pnlPlaylistSelector = new System.Windows.Forms.Panel();
             this.pnlPlaying = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.shoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pnlSearch = new System.Windows.Forms.Panel();
+            this.pnlTrackSelector = new System.Windows.Forms.Panel();
             this.pnlCenter.SuspendLayout();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pnlSelector
+            // pnlPlaylistSelector
             // 
-            this.pnlSelector.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSelector.Location = new System.Drawing.Point(0, 24);
-            this.pnlSelector.Name = "pnlSelector";
-            this.pnlSelector.Size = new System.Drawing.Size(128, 366);
-            this.pnlSelector.TabIndex = 0;
+            this.pnlPlaylistSelector.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlPlaylistSelector.Location = new System.Drawing.Point(0, 24);
+            this.pnlPlaylistSelector.Name = "pnlPlaylistSelector";
+            this.pnlPlaylistSelector.Size = new System.Drawing.Size(130, 366);
+            this.pnlPlaylistSelector.TabIndex = 0;
             // 
             // pnlPlaying
             // 
@@ -55,7 +57,9 @@
             // 
             // pnlCenter
             // 
-            this.pnlCenter.Controls.Add(this.pnlSelector);
+            this.pnlCenter.Controls.Add(this.pnlTrackSelector);
+            this.pnlCenter.Controls.Add(this.pnlSearch);
+            this.pnlCenter.Controls.Add(this.pnlPlaylistSelector);
             this.pnlCenter.Controls.Add(this.menu);
             this.pnlCenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCenter.Location = new System.Drawing.Point(0, 0);
@@ -79,6 +83,22 @@
             this.shoahToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.shoahToolStripMenuItem.Text = "Shoah";
             // 
+            // pnlSearch
+            // 
+            this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSearch.Location = new System.Drawing.Point(130, 24);
+            this.pnlSearch.Name = "pnlSearch";
+            this.pnlSearch.Size = new System.Drawing.Size(670, 44);
+            this.pnlSearch.TabIndex = 2;
+            // 
+            // pnlTrackSelector
+            // 
+            this.pnlTrackSelector.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTrackSelector.Location = new System.Drawing.Point(130, 68);
+            this.pnlTrackSelector.Name = "pnlTrackSelector";
+            this.pnlTrackSelector.Size = new System.Drawing.Size(670, 322);
+            this.pnlTrackSelector.TabIndex = 3;
+            // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -99,11 +119,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlSelector;
+        private System.Windows.Forms.Panel pnlPlaylistSelector;
         private System.Windows.Forms.Panel pnlPlaying;
         private System.Windows.Forms.Panel pnlCenter;
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem shoahToolStripMenuItem;
+        private System.Windows.Forms.Panel pnlSearch;
+        private System.Windows.Forms.Panel pnlTrackSelector;
     }
 }
 
