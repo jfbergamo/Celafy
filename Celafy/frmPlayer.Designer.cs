@@ -31,10 +31,10 @@
             this.pnlPlaylistSelector = new System.Windows.Forms.Panel();
             this.pnlPlaying = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
+            this.pnlTrackSelector = new System.Windows.Forms.Panel();
+            this.pnlSearch = new System.Windows.Forms.Panel();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.shoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pnlSearch = new System.Windows.Forms.Panel();
-            this.pnlTrackSelector = new System.Windows.Forms.Panel();
             this.pnlCenter.SuspendLayout();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -67,6 +67,22 @@
             this.pnlCenter.Size = new System.Drawing.Size(800, 390);
             this.pnlCenter.TabIndex = 2;
             // 
+            // pnlTrackSelector
+            // 
+            this.pnlTrackSelector.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlTrackSelector.Location = new System.Drawing.Point(130, 68);
+            this.pnlTrackSelector.Name = "pnlTrackSelector";
+            this.pnlTrackSelector.Size = new System.Drawing.Size(670, 322);
+            this.pnlTrackSelector.TabIndex = 3;
+            // 
+            // pnlSearch
+            // 
+            this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlSearch.Location = new System.Drawing.Point(130, 24);
+            this.pnlSearch.Name = "pnlSearch";
+            this.pnlSearch.Size = new System.Drawing.Size(670, 44);
+            this.pnlSearch.TabIndex = 2;
+            // 
             // menu
             // 
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -82,22 +98,6 @@
             this.shoahToolStripMenuItem.Name = "shoahToolStripMenuItem";
             this.shoahToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.shoahToolStripMenuItem.Text = "Shoah";
-            // 
-            // pnlSearch
-            // 
-            this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSearch.Location = new System.Drawing.Point(130, 24);
-            this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(670, 44);
-            this.pnlSearch.TabIndex = 2;
-            // 
-            // pnlTrackSelector
-            // 
-            this.pnlTrackSelector.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTrackSelector.Location = new System.Drawing.Point(130, 68);
-            this.pnlTrackSelector.Name = "pnlTrackSelector";
-            this.pnlTrackSelector.Size = new System.Drawing.Size(670, 322);
-            this.pnlTrackSelector.TabIndex = 3;
             // 
             // frmPlayer
             // 
