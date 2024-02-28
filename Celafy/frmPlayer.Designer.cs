@@ -28,24 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlPlaylistSelector = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlayer));
             this.pnlPlaying = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.pnlTrackSelector = new System.Windows.Forms.Panel();
             this.pnlSearch = new System.Windows.Forms.Panel();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.shoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.playlistSelectionButton1 = new Celafy.PlaylistSelectionButton();
+            this.pnlPlaylistSelector = new System.Windows.Forms.Panel();
             this.pnlCenter.SuspendLayout();
             this.menu.SuspendLayout();
+            this.pnlPlaylistSelector.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pnlPlaylistSelector
-            // 
-            this.pnlPlaylistSelector.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlPlaylistSelector.Location = new System.Drawing.Point(0, 24);
-            this.pnlPlaylistSelector.Name = "pnlPlaylistSelector";
-            this.pnlPlaylistSelector.Size = new System.Drawing.Size(130, 366);
-            this.pnlPlaylistSelector.TabIndex = 0;
             // 
             // pnlPlaying
             // 
@@ -70,17 +65,17 @@
             // pnlTrackSelector
             // 
             this.pnlTrackSelector.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTrackSelector.Location = new System.Drawing.Point(130, 68);
+            this.pnlTrackSelector.Location = new System.Drawing.Point(177, 68);
             this.pnlTrackSelector.Name = "pnlTrackSelector";
-            this.pnlTrackSelector.Size = new System.Drawing.Size(670, 322);
+            this.pnlTrackSelector.Size = new System.Drawing.Size(623, 322);
             this.pnlTrackSelector.TabIndex = 3;
             // 
             // pnlSearch
             // 
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSearch.Location = new System.Drawing.Point(130, 24);
+            this.pnlSearch.Location = new System.Drawing.Point(177, 24);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(670, 44);
+            this.pnlSearch.Size = new System.Drawing.Size(623, 44);
             this.pnlSearch.TabIndex = 2;
             // 
             // menu
@@ -99,6 +94,26 @@
             this.shoahToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.shoahToolStripMenuItem.Text = "Shoah";
             // 
+            // playlistSelectionButton1
+            // 
+            this.playlistSelectionButton1.BackColor = System.Drawing.Color.Transparent;
+            this.playlistSelectionButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("playlistSelectionButton1.BackgroundImage")));
+            this.playlistSelectionButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.playlistSelectionButton1.Location = new System.Drawing.Point(12, 17);
+            this.playlistSelectionButton1.Name = "playlistSelectionButton1";
+            this.playlistSelectionButton1.Size = new System.Drawing.Size(150, 50);
+            this.playlistSelectionButton1.TabIndex = 0;
+            // 
+            // pnlPlaylistSelector
+            // 
+            this.pnlPlaylistSelector.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pnlPlaylistSelector.Controls.Add(this.playlistSelectionButton1);
+            this.pnlPlaylistSelector.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlPlaylistSelector.Location = new System.Drawing.Point(0, 24);
+            this.pnlPlaylistSelector.Name = "pnlPlaylistSelector";
+            this.pnlPlaylistSelector.Size = new System.Drawing.Size(177, 366);
+            this.pnlPlaylistSelector.TabIndex = 0;
+            // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -113,19 +128,20 @@
             this.pnlCenter.PerformLayout();
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
+            this.pnlPlaylistSelector.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlPlaylistSelector;
         private System.Windows.Forms.Panel pnlPlaying;
         private System.Windows.Forms.Panel pnlCenter;
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.ToolStripMenuItem shoahToolStripMenuItem;
         private System.Windows.Forms.Panel pnlSearch;
         private System.Windows.Forms.Panel pnlTrackSelector;
+        private System.Windows.Forms.Panel pnlPlaylistSelector;
+        private PlaylistSelectionButton playlistSelectionButton1;
     }
 }
 
