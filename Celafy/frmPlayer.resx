@@ -117,14 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="playlistSelectionButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="psb.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAACWCAYAAABkW7XSAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAA2RJREFUeF7t2kFOFEEYhuFZCkuUC8AF5l5qOITChVQOotELIDtIJIHdBP1/qY5h
+        vgAADr4B6kKxwAAAA2RJREFUeF7t2kFOFEEYhuFZCkuUC8AF5l5qOITChVQOotELIDtIJIHdBP1/qY5h
         HHXjMP0lTyVPeqaqYPmmuqcXfxrL5fKgvCzvykVZle8A/1m3pRvTrenmHIwM/XvU5mflTbktm/45wDZ1
         e96WvZGlzaM2HJWPpf/ovlyNzwBPoZvT7enPn8rRyNPj0Qvlcmy8GVeAXZga1E06Hpl6GDXRt4HTyep6
         XAF2aWpRn7R+3R7Wl35m1QtOVsCcTE06nWLVvwb2Q67pvhFgTrpNd+VFB6t/RuxJD9iBOZra9LqD1e8+
@@ -142,4 +139,7 @@
         YII=
 </value>
   </data>
+  <metadata name="menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
