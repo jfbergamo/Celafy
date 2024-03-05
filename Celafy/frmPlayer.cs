@@ -21,5 +21,10 @@ namespace Celafy
         {
             psb.Test();
         }
+
+        private void Crack(object sender, EventArgs e)
+        {
+            MessageBox.Show("click");
+        }
     }
 }

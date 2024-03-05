@@ -37,8 +37,7 @@
             this.lblAutore = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.pnlButtonRight = new System.Windows.Forms.Panel();
-            this.tmrNome = new System.Windows.Forms.Timer(this.components);
-            this.tmrAutore = new System.Windows.Forms.Timer(this.components);
+            this.tmrScorrimento = new System.Windows.Forms.Timer(this.components);
             this.pnlImage.SuspendLayout();
             this.pnlImageCenter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picThumbnail)).BeginInit();
@@ -92,17 +91,19 @@
             this.pnlButtonFill.Name = "pnlButtonFill";
             this.pnlButtonFill.Size = new System.Drawing.Size(93, 50);
             this.pnlButtonFill.TabIndex = 3;
+            this.pnlButtonFill.MouseEnter += new System.EventHandler(this.UpdateText);
+            this.pnlButtonFill.MouseLeave += new System.EventHandler(this.DontUpdateText);
             // 
             // lblAutore
             // 
             this.lblAutore.AutoSize = true;
             this.lblAutore.Font = new System.Drawing.Font("Cascadia Code", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAutore.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAutore.Location = new System.Drawing.Point(6, 30);
+            this.lblAutore.Location = new System.Drawing.Point(6, 25);
             this.lblAutore.Name = "lblAutore";
-            this.lblAutore.Size = new System.Drawing.Size(13, 13);
+            this.lblAutore.Size = new System.Drawing.Size(43, 13);
             this.lblAutore.TabIndex = 4;
-            this.lblAutore.Text = DEFAULT_AUTORE;
+            this.lblAutore.Text = "Autore";
             // 
             // lblNome
             // 
@@ -111,9 +112,9 @@
             this.lblNome.ForeColor = System.Drawing.SystemColors.Control;
             this.lblNome.Location = new System.Drawing.Point(6, 9);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(119, 16);
+            this.lblNome.Size = new System.Drawing.Size(35, 16);
             this.lblNome.TabIndex = 3;
-            this.lblNome.Text = DEFAULT_NOME;
+            this.lblNome.Text = "Nome";
             // 
             // pnlButtonRight
             // 
@@ -123,14 +124,10 @@
             this.pnlButtonRight.Size = new System.Drawing.Size(14, 50);
             this.pnlButtonRight.TabIndex = 5;
             // 
-            // tmrNome
+            // tmrScorrimento
             // 
-            this.tmrNome.Interval = 1000;
-            this.tmrNome.Tick += new System.EventHandler(this.tmrNome_Tick);
-            // 
-            // tmrAutore
-            // 
-            this.tmrAutore.Interval = 1000;
+            this.tmrScorrimento.Interval = 500;
+            this.tmrScorrimento.Tick += new System.EventHandler(this.tmrScorrimento_Tick);
             // 
             // PlaylistSelectionButton
             // 
@@ -165,7 +162,6 @@
         private System.Windows.Forms.Panel pnlButtonRight;
         private System.Windows.Forms.Label lblAutore;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Timer tmrNome;
-        private System.Windows.Forms.Timer tmrAutore;
+        private System.Windows.Forms.Timer tmrScorrimento;
     }
 }

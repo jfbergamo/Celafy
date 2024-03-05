@@ -32,12 +32,12 @@
             this.pnlPlaying = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.pnlTrackSelector = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlSearch = new System.Windows.Forms.Panel();
             this.pnlPlaylistSelector = new System.Windows.Forms.Panel();
+            this.psb = new Celafy.PlaylistSelectionButton();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.shoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.psb = new Celafy.PlaylistSelectionButton();
             this.pnlCenter.SuspendLayout();
             this.pnlTrackSelector.SuspendLayout();
             this.pnlPlaylistSelector.SuspendLayout();
@@ -73,6 +73,16 @@
             this.pnlTrackSelector.Size = new System.Drawing.Size(623, 322);
             this.pnlTrackSelector.TabIndex = 3;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(164, 114);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pnlSearch
             // 
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
@@ -91,6 +101,19 @@
             this.pnlPlaylistSelector.Size = new System.Drawing.Size(177, 366);
             this.pnlPlaylistSelector.TabIndex = 0;
             // 
+            // psb
+            // 
+            this.psb.Autore = null;
+            this.psb.BackColor = System.Drawing.Color.Transparent;
+            this.psb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("psb.BackgroundImage")));
+            this.psb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.psb.Location = new System.Drawing.Point(12, 17);
+            this.psb.Name = "psb";
+            this.psb.Nome = null;
+            this.psb.Size = new System.Drawing.Size(150, 50);
+            this.psb.TabIndex = 0;
+            this.psb.Click += new System.EventHandler(this.Crack);
+            // 
             // menu
             // 
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -106,26 +129,6 @@
             this.shoahToolStripMenuItem.Name = "shoahToolStripMenuItem";
             this.shoahToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.shoahToolStripMenuItem.Text = "Shoah";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(164, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // psb
-            // 
-            this.psb.BackColor = System.Drawing.Color.Transparent;
-            this.psb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("psb.BackgroundImage")));
-            this.psb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.psb.Location = new System.Drawing.Point(12, 17);
-            this.psb.Name = "psb";
-            this.psb.Size = new System.Drawing.Size(150, 50);
-            this.psb.TabIndex = 0;
             // 
             // frmPlayer
             // 
