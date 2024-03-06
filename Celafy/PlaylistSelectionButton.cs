@@ -21,6 +21,7 @@ namespace Celafy
         private const string DEFAULT_AUTORE = "Autore";
 
         private string nome, autore;
+        private bool nomeBackwards, autoreBackwards;
 
         #endregion
 
@@ -33,6 +34,10 @@ namespace Celafy
 
         private void PlaylistSelectionButton_Load(object sender, EventArgs e)
         {
+            nome = DEFAULT_NOME;
+            autore = DEFAULT_AUTORE;
+            nomeBackwards = false;
+            autoreBackwards = false;
         }
 
         public void Test()
@@ -65,14 +70,24 @@ namespace Celafy
 
         private void tmrScorrimento_Tick(object sender, EventArgs e)
         {
+            string emon = "";
+            if (nomeBackwards)
+            {
+                // TODO: Funzione reverse che funziona
+                if (lblNome.Text != nome)
+                {
+                    lblNome.Text = emon[0].ToString() + lblNome.Text;
+                    emon = emon.Substring(1);
+                }
+                else nomeBackwards = false;
+            }
+            else
             if (TextRenderer.MeasureText(lblNome.Text, lblNome.Font).Width > LABEL_MAX_WIDTH)
             {
                 lblNome.Text = lblNome.Text.Substring(1);
+                emon = Utilities.Reverse(nome);
             }
-            if (TextRenderer.MeasureText(lblAutore.Text, lblAutore.Font).Width > LABEL_MAX_WIDTH)
-            {
-                lblAutore.Text = lblAutore.Text.Substring(1);
-            }
+            else nomeBackwards = true;
         }
 
         #endregion
