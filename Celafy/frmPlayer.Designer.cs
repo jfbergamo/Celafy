@@ -28,19 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlayer));
             this.pnlPlaying = new System.Windows.Forms.Panel();
             this.pnlCenter = new System.Windows.Forms.Panel();
             this.pnlTrackSelector = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.pnlSearch = new System.Windows.Forms.Panel();
             this.pnlPlaylistSelector = new System.Windows.Forms.Panel();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.shoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.psb = new Celafy.PlaylistSelectionButton();
             this.pnlCenter.SuspendLayout();
-            this.pnlTrackSelector.SuspendLayout();
-            this.pnlPlaylistSelector.SuspendLayout();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,40 +61,28 @@
             // 
             // pnlTrackSelector
             // 
-            this.pnlTrackSelector.Controls.Add(this.button1);
             this.pnlTrackSelector.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTrackSelector.Location = new System.Drawing.Point(187, 68);
+            this.pnlTrackSelector.Location = new System.Drawing.Point(193, 68);
             this.pnlTrackSelector.Name = "pnlTrackSelector";
-            this.pnlTrackSelector.Size = new System.Drawing.Size(613, 322);
+            this.pnlTrackSelector.Size = new System.Drawing.Size(607, 322);
             this.pnlTrackSelector.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(164, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnlSearch
             // 
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSearch.Location = new System.Drawing.Point(187, 24);
+            this.pnlSearch.Location = new System.Drawing.Point(193, 24);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(613, 44);
+            this.pnlSearch.Size = new System.Drawing.Size(607, 44);
             this.pnlSearch.TabIndex = 2;
             // 
             // pnlPlaylistSelector
             // 
             this.pnlPlaylistSelector.AutoScroll = true;
             this.pnlPlaylistSelector.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pnlPlaylistSelector.Controls.Add(this.psb);
             this.pnlPlaylistSelector.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlPlaylistSelector.Location = new System.Drawing.Point(0, 24);
             this.pnlPlaylistSelector.Name = "pnlPlaylistSelector";
-            this.pnlPlaylistSelector.Size = new System.Drawing.Size(187, 366);
+            this.pnlPlaylistSelector.Size = new System.Drawing.Size(193, 366);
             this.pnlPlaylistSelector.TabIndex = 0;
             // 
             // menu
@@ -118,19 +101,6 @@
             this.shoahToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.shoahToolStripMenuItem.Text = "Shoah";
             // 
-            // psb
-            // 
-            this.psb.Autore = null;
-            this.psb.BackColor = System.Drawing.Color.Transparent;
-            this.psb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("psb.BackgroundImage")));
-            this.psb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.psb.Location = new System.Drawing.Point(12, 17);
-            this.psb.Name = "psb";
-            this.psb.Nome = null;
-            this.psb.Size = new System.Drawing.Size(150, 50);
-            this.psb.TabIndex = 0;
-            this.psb.Click += new System.EventHandler(this.Crack);
-            // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,10 +111,9 @@
             this.MainMenuStrip = this.menu;
             this.Name = "frmPlayer";
             this.Text = "Celafy Music Player";
+            this.Load += new System.EventHandler(this.FormLoad);
             this.pnlCenter.ResumeLayout(false);
             this.pnlCenter.PerformLayout();
-            this.pnlTrackSelector.ResumeLayout(false);
-            this.pnlPlaylistSelector.ResumeLayout(false);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);
@@ -159,8 +128,6 @@
         private System.Windows.Forms.Panel pnlSearch;
         private System.Windows.Forms.Panel pnlTrackSelector;
         private System.Windows.Forms.Panel pnlPlaylistSelector;
-        private PlaylistSelectionButton psb;
-        private System.Windows.Forms.Button button1;
     }
 }
 

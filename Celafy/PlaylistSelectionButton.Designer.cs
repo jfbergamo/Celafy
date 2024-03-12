@@ -91,8 +91,6 @@
             this.pnlButtonFill.Name = "pnlButtonFill";
             this.pnlButtonFill.Size = new System.Drawing.Size(93, 50);
             this.pnlButtonFill.TabIndex = 3;
-            this.pnlButtonFill.MouseEnter += new System.EventHandler(this.UpdateText);
-            this.pnlButtonFill.MouseLeave += new System.EventHandler(this.DontUpdateText);
             // 
             // lblAutore
             // 
