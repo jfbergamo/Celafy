@@ -35,9 +35,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pnlSearch = new System.Windows.Forms.Panel();
             this.pnlPlaylistSelector = new System.Windows.Forms.Panel();
-            this.psb = new Celafy.PlaylistSelectionButton();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.shoahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.psb = new Celafy.PlaylistSelectionButton();
             this.pnlCenter.SuspendLayout();
             this.pnlTrackSelector.SuspendLayout();
             this.pnlPlaylistSelector.SuspendLayout();
@@ -68,9 +68,9 @@
             // 
             this.pnlTrackSelector.Controls.Add(this.button1);
             this.pnlTrackSelector.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlTrackSelector.Location = new System.Drawing.Point(177, 68);
+            this.pnlTrackSelector.Location = new System.Drawing.Point(187, 68);
             this.pnlTrackSelector.Name = "pnlTrackSelector";
-            this.pnlTrackSelector.Size = new System.Drawing.Size(623, 322);
+            this.pnlTrackSelector.Size = new System.Drawing.Size(613, 322);
             this.pnlTrackSelector.TabIndex = 3;
             // 
             // button1
@@ -86,33 +86,21 @@
             // pnlSearch
             // 
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSearch.Location = new System.Drawing.Point(177, 24);
+            this.pnlSearch.Location = new System.Drawing.Point(187, 24);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(623, 44);
+            this.pnlSearch.Size = new System.Drawing.Size(613, 44);
             this.pnlSearch.TabIndex = 2;
             // 
             // pnlPlaylistSelector
             // 
+            this.pnlPlaylistSelector.AutoScroll = true;
             this.pnlPlaylistSelector.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.pnlPlaylistSelector.Controls.Add(this.psb);
             this.pnlPlaylistSelector.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlPlaylistSelector.Location = new System.Drawing.Point(0, 24);
             this.pnlPlaylistSelector.Name = "pnlPlaylistSelector";
-            this.pnlPlaylistSelector.Size = new System.Drawing.Size(177, 366);
+            this.pnlPlaylistSelector.Size = new System.Drawing.Size(187, 366);
             this.pnlPlaylistSelector.TabIndex = 0;
-            // 
-            // psb
-            // 
-            this.psb.Autore = null;
-            this.psb.BackColor = System.Drawing.Color.Transparent;
-            this.psb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("psb.BackgroundImage")));
-            this.psb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.psb.Location = new System.Drawing.Point(12, 17);
-            this.psb.Name = "psb";
-            this.psb.Nome = null;
-            this.psb.Size = new System.Drawing.Size(150, 50);
-            this.psb.TabIndex = 0;
-            this.psb.Click += new System.EventHandler(this.Crack);
             // 
             // menu
             // 
@@ -129,6 +117,19 @@
             this.shoahToolStripMenuItem.Name = "shoahToolStripMenuItem";
             this.shoahToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.shoahToolStripMenuItem.Text = "Shoah";
+            // 
+            // psb
+            // 
+            this.psb.Autore = null;
+            this.psb.BackColor = System.Drawing.Color.Transparent;
+            this.psb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("psb.BackgroundImage")));
+            this.psb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.psb.Location = new System.Drawing.Point(12, 17);
+            this.psb.Name = "psb";
+            this.psb.Nome = null;
+            this.psb.Size = new System.Drawing.Size(150, 50);
+            this.psb.TabIndex = 0;
+            this.psb.Click += new System.EventHandler(this.Crack);
             // 
             // frmPlayer
             // 

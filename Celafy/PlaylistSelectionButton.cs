@@ -68,7 +68,7 @@ namespace Celafy
         public void Test()
         {
             Nome = "bimba carboncino";
-            Autore = "cinquecellularinellatutagoldbabynonrichiamerò";
+            Autore = "J";
             UpdateInfo();
         }
 
@@ -84,9 +84,13 @@ namespace Celafy
 
         private void UpdateText(object sender, EventArgs e)
         {
-            nome.Reset();
-            autore.Reset();
-            tmrScorrimento.Start();
+            if (LarghezzaTesto(lblNome)   > LABEL_MAX_WIDTH ||
+                LarghezzaTesto(lblAutore) > LABEL_MAX_WIDTH )
+            {
+                nome.Reset();
+                autore.Reset();
+                tmrScorrimento.Start();
+            }
         }
 
         private void DontUpdateText(object sender, EventArgs e)
@@ -97,7 +101,7 @@ namespace Celafy
 
         private void tmrScorrimento_Tick(object sender, EventArgs e)
         {
-            if (TextRenderer.MeasureText(lblNome.Text, lblNome.Font).Width > LABEL_MAX_WIDTH || nome.stato)
+            if (LarghezzaTesto(lblNome) > LABEL_MAX_WIDTH || nome.stato)
             {
                 lblNome.Text = nome.Testo.Substring(nome.index);
             }
@@ -112,7 +116,7 @@ namespace Celafy
                 nome.vel -= nome.vel;
             }
 
-            if (TextRenderer.MeasureText(lblAutore.Text, lblAutore.Font).Width > LABEL_MAX_WIDTH || autore.stato)
+            if (LarghezzaTesto(lblAutore) > LABEL_MAX_WIDTH || autore.stato)
             {
                 lblAutore.Text = autore.Testo.Substring(autore.index);
             }
@@ -129,6 +133,11 @@ namespace Celafy
 
             nome.index += nome.vel;
             autore.index += autore.vel;
+        }
+
+        private int LarghezzaTesto(Label lbl)
+        {
+            return TextRenderer.MeasureText(lbl.Text, lbl.Font).Width;
         }
 
         #endregion
