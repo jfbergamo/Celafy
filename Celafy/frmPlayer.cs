@@ -14,6 +14,15 @@ namespace Celafy
     {
         public frmPlayer()
         {
+            //byte[] data = Images.ImageToBytes(Image.FromFile("..\\..\\src\\buttonClick.png"));
+
+            //string dataStr = "";
+            //foreach (byte b in data)
+            //{
+            //    dataStr += (char)b;
+            //}
+
+            //Application.Exit();
             InitializeComponent();
         }
 

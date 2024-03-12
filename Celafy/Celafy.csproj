@@ -52,6 +52,7 @@
     <Compile Include="frmPlayer.Designer.cs">
       <DependentUpon>frmPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Images.cs" />
     <Compile Include="PlaylistSelectionButton.cs">
       <SubType>UserControl</SubType>
     </Compile>

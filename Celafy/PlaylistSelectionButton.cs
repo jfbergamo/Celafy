@@ -60,8 +60,11 @@ namespace Celafy
             nome = new ProprietaTesto("Nome");
             autore = new ProprietaTesto("Autore");
 
-            buttonBG = Image.FromFile("..\\..\\src\\button.png");
-            buttonBG_Selected = Image.FromFile("..\\..\\src\\buttonClick.png");
+            //buttonBG = Image.FromFile("..\\..\\src\\button.png");
+            //buttonBG_Selected = Image.FromFile("..\\..\\src\\buttonClick.png");
+
+            buttonBG = Image.FromStream(Images.BytesToStream(Images.StringToBytes(Images.Bytes_ButtonBG)));
+            buttonBG_Selected = Image.FromStream(Images.BytesToStream(Images.StringToBytes(Images.Bytes_ButtonBG_Selected)));
 
             InitializeComponent();
 
